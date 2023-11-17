@@ -1,19 +1,19 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from 'next/head';
+import Link from 'next/link';
 
-import { getSortedPostsData } from '../lib/posts'
+import { getSortedPostsData } from '../lib/posts';
 
-import Layout, { siteTitle } from '../components/layout'
-import Date from '../components/date'
-import utilStyles from '../styles/utils.module.css'
+import Layout, { siteTitle } from '../components/layout';
+import Date from '../components/date';
+import utilStyles from '../styles/utils.module.css';
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData,
     },
-  }
+  };
 }
 
 export default function Home({ allPostsData }) {
@@ -26,13 +26,13 @@ export default function Home({ allPostsData }) {
         <p>
           Hello, I’m <strong>Matheus Martins</strong>. I’m a brazilian software
           engineer. You can contact me on{' '}
-          <Link href="https://twitter.com/uncrxd">
-            <a>Twitter</a>
+          <Link href="mailto:mail@mmartins.dev">
+            <a>E-mail: mail@mmartins.dev</a>
           </Link>
         </p>
         <p>
           (This is a sample website - you’ll be building a site like this on
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          <a href="https://nextjs.org/learn"> our Next.js tutorial</a>.)
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -52,5 +52,5 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
     </Layout>
-  )
+  );
 }

@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from 'next/head';
+import Link from 'next/link';
 
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
+import styles from './layout.module.css';
+import utilStyles from '../styles/utils.module.css';
 
-const name = 'Matheus Martins'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'Matheus Martins';
+export const siteTitle = 'Next.js Sample Website';
 
 function Layout({ children, home }) {
   return (
@@ -30,7 +30,7 @@ function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/images/profile.jpg"
+              src="https://avatars.githubusercontent.com/m1theus"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
@@ -41,7 +41,7 @@ function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <img
-                  src="/images/profile.jpg"
+                  src="https://avatars.githubusercontent.com/m1theus"
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />
@@ -66,7 +66,7 @@ function Layout({ children, home }) {
         </div>
       )}
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
