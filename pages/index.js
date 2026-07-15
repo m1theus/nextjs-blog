@@ -26,9 +26,9 @@ export default function Home({ allPostsData }) {
         <p>
           Hello, I’m <strong>Matheus Martins</strong>. I’m a brazilian software
           engineer. You can contact me on{' '}
-          <Link href="mailto:mail@mmartins.dev">
-            <a>E-mail: mail@mmartins.dev</a>
-          </Link>
+          <a href="https://github.com/m1theus" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
         </p>
         <p>
           (This is a sample website - you’ll be building a site like this on
